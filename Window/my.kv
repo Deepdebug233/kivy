@@ -1,0 +1,17 @@
+Manager:
+    FirstScreen:
+    SecondScreen:
+<FirstScreen>:
+    name:"First"
+    Button:
+        text:"FirstScreen"
+        on_release:
+            app.root.current = "Second"
+            root.manager.transition.direction="left"   
+<SecondScreen>:
+    name:"Second"
+    Button:
+        text:"SecondScreen"
+        on_release:
+            app.root.current = "First"
+            root.manager.transition.direction="right"
